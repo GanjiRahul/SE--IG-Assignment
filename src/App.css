@@ -1,38 +1,278 @@
-.App {
-  text-align: center;
+.container{
+  /* margin-left:15px ; */
+  max-width:inherit;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.accountTitle{
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.accountDetails{
+  margin-left: 5px;
+  border-top:2px solid orange;
+  border-bottom: 2px solid lightslategray;
+  overflow: hidden;
+}
+
+.contactDetails{
+  margin-left: 5px;
+  border-top:2px solid orange;
+  overflow: hidden;
+}
+
+.accDetailTitle {
+  display: inline;
+  margin: 5px;
+}
+
+.accBtns {
+  float:right;
+  margin:5px;
+}
+
+.accBtn {
+  border:none;
+  margin: 0px 5px;
+}
+
+.companyDetails{
+  display:flex;
+}
+
+.companyHeading {
+  display:flex;
+  padding: 10px;
+}
+
+.companyTitle {
+  margin: 0px 40px;
+  padding-right: 50px;
+  border-right: 2px solid lightsteelblue;
+}
+
+.companyName {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.companyAdd {
+  font-size: 10px;
+}
+
+.inputDiv {
+  align-content: center;
+  margin:20px 40px 0px;
+  width:42%;
+}
+
+.inputDiv input {
+  /* background: rgba(0, 0, 0, 0); */
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+  width: 550px;
+}
+
+.inputDiv input:focus {
+  outline: none;
+}
+
+.phNoTitle{
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+.phNo{
+  font-size: 10px;
+}
+
+.searchInput{
+  width:300px;
+}
+
+.empDetails {
+  display:flex;
+  height: 90px;
+  width: 400px;
+  border: 1px solid #ced4da;
+  margin: 5px 5px;
+  box-shadow: 0px 0px 5px 2px #dad6d6;
+  border-left: 3.5px solid dodgerblue;
+}
+
+.contactInfo{
+  margin-left:52px;
+  padding: 25px;
+}
+
+.userInfo {
+  margin:5px;
+  font-size: 10px;
+  width:102px;
+}
+
+.userInfo p {
+  margin: 1px 0px;
+}
+
+.revealBtn{
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  font-family: arial, sans-serif;
+  color: #069;
+  /* text-decoration: underline; */
+  cursor: pointer;
+}
+
+.fa-phone{
+  transform: scaleX(-1);
+}
+
+.userImg {
+  margin-left: 10px;
+  align-self: center;
+  border-radius: 15px;
+  height:50px;
+  width:50px
+}
+
+.icon-plus {
+  background-color: #000;
+  border-radius:8px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top:5px;
+  left:0px;
+  margin-right: -14px;
+  float: right;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  .icon-plus:after {
+    background-color: #fff;
+    width: 8px;
+    height: 2px;
+    border-radius: 1px;
+    position: absolute;
+    top:7px;
+    left: 4px;
+    content:"";
+    }
 
-.App-link {
-  color: #61dafb;
-}
+    .icon-plus:before {
+    background-color: #fff;
+    width: 2px;
+    height: 8px;
+    border-radius: 1px;
+    position: absolute;
+    top:4px;
+    left: 7px;
+    content:"";
+    }
+    
+    .popupIcons{
+      margin-left:205px;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .linkedInImg{
+      margin-right:-8px;
+      margin-top: 60px;
+      background-position:right bottom;
+      height:10px;
+      width: 10px;
+    }
+
+    .linkedInImg img {
+      width: 15px;
+    }
+
+    .filterBtn{
+      background: none!important;
+      border: none;
+      padding: 0!important;
+      color: #069;
+      cursor: pointer;
+      margin:0px 10px;
+    }
+
+    .spanLinkedIn{
+      margin-left: 45px;
+    }
+
+    .hideRevealBtn {
+      visibility: hidden;
+    }
+
+    .hideOn {
+      visibility: hidden;
+    }
+
+    .conDetailTitle {
+      display: inline;
+    }
+
+    /* media queries */
+    @media screen and (max-width: 600px) {
+
+        .accountDetails {
+          width: 140%;
+        }  
+
+        .companyInfo {
+          widows: 152%;
+        }   
+
+        .companyName {
+          display: flex;
+          width: 118px;
+        }
+
+        .inputDiv input {
+          width: 470px;
+        }
+
+        .accDetailTitle {
+          margin-top: 10px;
+        }
+
+        .companyAdd {
+          font-size: 15px;
+        }
+
+        .phNoTitle {
+          width: 85px;
+          font-size: 15px;
+        }
+
+        .phNo {
+          font-size: 13px;
+        }
+
+        .searchInput {
+          width: 155px;
+          height: 25px;
+        }
+
+        .conDetailTitle {
+          display: inline;
+          font-size: 14px;
+        }
+
+        .accBtn {
+          margin-right: -5px;
+        }
+
+        .filterBtn {
+          margin: 0px 1px 0px 5px;
+        }
+
+        .contactInfo {
+          width: inherit;
+          margin: 0px;
+        }   
+
+
+
+    }

@@ -5,6 +5,7 @@ const data = [
         industryType: "Electrical Equipment And Computer Manufacturing",
         address:"Affolternstrasse 44, 8050 Zürich, Switzerland",
         revenue:"$1B+",
+        title:"Social Abb",
         phoneNo:7788452691,
         employeeSize:"11001+",
         website:"Abb.Social",
